@@ -10,8 +10,8 @@ import ImageGrab
 
 
 X = 0 # seconds to pause before taking next pixel
-WIDTH = 300 # the width of the image drawn, higher number = slower
-HEIGHT = 300 # the height of the image drawn, higher number = slower
+WIDTH = 100 # the width of the image drawn, higher number = slower
+HEIGHT = 100 # the height of the image drawn, higher number = slower
 
 if __name__ == '__main__':
 
