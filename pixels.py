@@ -10,19 +10,20 @@ import ImageGrab
 
 
 X = 1 # seconds to pause before taking next pixel
-SIZE = 300 # the width=height of the image drawn, higher number = slower
+WIDTH = 300 # the width of the image drawn, higher number = slower
+HEIGHT = 300 # the height of the image drawn, higher number = slower
 
 if __name__ == '__main__':
 
     #start = time.time()
     
-    pixels_img = Image.new('RGB', (SIZE, SIZE), 'black') # create a new Image instance
+    pixels_img = Image.new('RGB', (WIDTH, HEIGHT), 'black') # create a new Image instance
     pixels = pixels_img.load()
     
-    for w in xrange(SIZE):
-        for h in xrange(SIZE):
+    for w in xrange(WIDTH):
+        for h in xrange(HEIGHT):
             img = ImageGrab.grab() # take a screenshot
-            img = img.resize((SIZE, SIZE)) # create a thumbnail
+            img = img.resize((WIDTH, HEIGHT)) # create a thumbnail
             pixels[w, h] = img.getpixel((w, h)) # pixels(x, y) = (r, g, b)
             time.sleep(X)
 
