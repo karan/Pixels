@@ -9,9 +9,9 @@ import Image
 import pyscreenshot as ImageGrab
 
 
-X = 1 # seconds to pause before taking next pixel
-WIDTH = 600 # the width of the image drawn, higher number = slower
-HEIGHT = 600 # the height of the image drawn, higher number = slower
+X = 0 # seconds to pause before taking next pixel
+WIDTH = 800 # the width of the image drawn, higher number = slower
+HEIGHT = 400 # the height of the image drawn, higher number = slower
 
 if __name__ == '__main__':
 
