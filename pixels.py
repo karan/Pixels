@@ -6,7 +6,7 @@ A lazy Sunday afternoon hack!
 import time
 
 import Image
-import ImageGrab
+import pyscreenshot as ImageGrab
 
 
 X = 1 # seconds to pause before taking next pixel
