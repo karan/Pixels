@@ -37,4 +37,4 @@ Samples
 Share Your Pixels
 ==========
 
-If you'd like to share your pixels, please add it/them in [Samples](https://github.com/thekarangoel/Pixels#samples) and send a pull request.
+Bedore anything, **make sure you have the latest fork of this repo**. If you'd like to share your pixels, please add it/them in [Samples](https://github.com/thekarangoel/Pixels#samples) and send a pull request.
