@@ -17,11 +17,6 @@ Dependencies
 
 [PIL](http://effbot.org/zone/pil-index.htm)
 
-Notes
-=======
-
-I set `WIDTH = 100` and `HEIGHT = 100` while developing, and it took about 19 minutes to complete with no sleep interval (`X = 0`). Time to complete increases quadratically. Just a heads up.
-
 Share Your Pixels
 ==========
 
