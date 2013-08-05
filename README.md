@@ -17,6 +17,13 @@ Dependencies
 
 [PIL](http://effbot.org/zone/pil-index.htm)
 
+Samples
+========
+
+`X = 1` `WIDTH = 600` `HEIGHT = 600`
+Time taken = ~10 minutes
+![](https://raw.github.com/thekarangoel/Pixels/master/pixel.png)
+
 Share Your Pixels
 ==========
 
