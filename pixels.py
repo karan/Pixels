@@ -9,25 +9,32 @@ import Image
 import pyscreenshot as ImageGrab
 
 
-X = 0 # seconds to pause before taking next pixel
-WIDTH = 800 # the width of the image drawn, higher number = slower
-HEIGHT = 400 # the height of the image drawn, higher number = slower
-
 if __name__ == '__main__':
 
     start = time.time()
+
+    X = input('How many seconds to wait between each screenshot (seconds)?: ')
+    width = input('Width of the image to make (0 for max): ')
+    height = input('Height of the image to make (0 for max): ')
+
+    img = ImageGrab.grab() # take a screenshot
     
-    pixels_img = Image.new('RGB', (WIDTH, HEIGHT), 'black') # create a new Image instance
+    if width == 0:
+        width = img.size[0]
+    if height == 0:
+        height = img.size[1]
+    
+    pixels_img = Image.new('RGB', (width, height), 'black') # create a new Image instance
     pixels = pixels_img.load()
     
-    for w in xrange(WIDTH):
+    for w in xrange(width):
         img = ImageGrab.grab() # take a screenshot
-        img = img.resize((WIDTH, HEIGHT)) # create a thumbnail
-        for h in xrange(HEIGHT):
+        img = img.resize((width, height)) # create a thumbnail
+        for h in xrange(height):
             pixels[w, h] = img.getpixel((w, h)) # pixels(x, y) = (r, g, b)
         time.sleep(X)
 
     pixels_img.save('pixel.png', 'PNG')
     pixels_img.show()
 
-    print time.time() - start
+    print 'Completed in %fs' % (time.time() - start)
