@@ -8,24 +8,23 @@ Captures pixels on your screen sequentially, and draws them out in a single imag
 Usage
 ======
 
-Change the global variables `X`, `WIDTH` and `HEIGHT` as per your needs.
-
-    python pixels.py
+    $ cd Pixels
+    $ python pixels.py
     
 Dependencies
 ===========
 
 [PIL](http://effbot.org/zone/pil-index.htm)
 
-    pip install PIL
+    $ pip install PIL
 
 OR
 
-    apt-get install python-imaging
+    $ apt-get install python-imaging
 
 [pyscreenshot](https://github.com/ponty/pyscreenshot/)
 
-    pip install pyscreenshot 
+    $ pip install pyscreenshot 
 
 Samples
 ========
